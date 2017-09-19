@@ -1,3 +1,15 @@
-<p class="about">
-  {{aboutText}}
-</p>
+<md-card class="card">
+  <md-card-title>about me</md-card-title>
+  <md-card-content>
+    <md-grid-list cols="2" row-height="400px">
+      <md-grid-tile [colspan]="1" [rowspan]="1">
+        <p>
+          {{aboutText}}
+        </p>
+      </md-grid-tile>
+      <md-grid-tile [colspan]="1" [rowspan]="1">
+        <img md-card-image src="./assets/images/ygritte.jpg" alt="Me">
+      </md-grid-tile>
+    </md-grid-list>
+  </md-card-content>
+</md-card>

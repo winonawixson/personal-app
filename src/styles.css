@@ -3,4 +3,6 @@ body {
     background-color: #E2E2E2;
     font-family: Georgia, 'Times New Roman', Times, serif;    
     color: #19647E;
+    border-left-color: #8E3B46;
+    border-left: 40px;
 }
