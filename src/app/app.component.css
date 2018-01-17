@@ -12,11 +12,11 @@ nav a {
     font-size: 100%;
   }
   nav a:visited, a:link {
-    color: #009FB7;
+    color: #19647E;
   }
   nav a:hover {
-    /* color: #8E3B46; */
-    background-color: #CFD8DC;
+    color: #8E3B46;
+    background-color: #fffff4;
   }
   nav a.active {
     color: #8E3B46;

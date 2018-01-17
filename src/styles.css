@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: #E2E2E2;
+    background-color: #fffff4;
     font-family: Georgia, 'Times New Roman', Times, serif;    
     color: #19647E;
-    border-left-color: #8E3B46;
-    border-left: 40px;
+    /* 19647E; */
+    /* border-left-color: #8E3B46;
+    border-left: 40px; */
 }
