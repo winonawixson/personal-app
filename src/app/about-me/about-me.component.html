@@ -1,14 +1,12 @@
 <mat-card class="card">
-  <mat-card-title>about me</mat-card-title>
+  <mat-card-title>
+    <img mat-card-avatar src="./assets/images/winona.jpg" alt="Me">
+    about me
+  </mat-card-title>
   <mat-card-content>
-    <mat-grid-list cols="2" row-height="400px">
+    <mat-grid-list cols="1" row-height="500px">
       <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <p>
           {{aboutText}}
-        </p>
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <img mat-card-image src="./assets/images/ygritte.jpg" alt="Me">
       </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>

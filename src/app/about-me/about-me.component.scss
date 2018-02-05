@@ -1,14 +1,14 @@
 @import "./src/themes/styles.scss";
 
 .about {
-    margin-right: 400px;
-    margin-left: 100px;
     font-size: 110%;
 }
 
 .card {
-    margin: 40px 130px 40px 0;
+    // margin: 40px 130px 40px 0;
     background-color: $ww-light-gray;
+    width: 300px;
+    height: 500px;
   }
 
   md-card-title {

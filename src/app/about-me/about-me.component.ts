@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  // tslint:disable-next-line:max-line-length
-  aboutText = 'Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.  Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens.Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams.Pestilentia est plague haec decaying ambulabat mortuos.Sicut zeder apathetic malus voodoo.Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife.';
+  aboutText = `Hi there. I'm Winona, a software developer always ready to learn something new!
+                I thrive on adventures exploring new places, great conversations with great people,
+                 and a relaxing night in to watch the latest on Netflix.`;
   constructor() { }
 
   ngOnInit() {
