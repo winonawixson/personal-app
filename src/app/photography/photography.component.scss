@@ -1,25 +1,27 @@
 @import "./src/themes/styles.scss";
 
-.card {
-    height: 300px;
-    width: 300px;
-    border-radius: 15px;
-    background-color: $ww-light-gray;
-    color: $ww-dark-blue;
+
+mat-card {
+  margin: 35px;
+  height: 400px;
+  width: auto;
+  border-radius: 25px;
+  background-color: $ww-light-gray;
+  color: $ww-dark-blue;
 }
 
 img {
-    height: auto;
-    width: auto;
-    margin: auto;
+  height: 200px;
+  width: auto;
+  margin: auto;
 }
 
 .title {
-    font-size: 130%;
-    font-weight: bold;
-    text-align: left;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: left;
 }
 
 .contentText {
-    padding-top: 5px;
+  padding-top: 5px;
 }
