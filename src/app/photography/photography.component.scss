@@ -1,9 +1,11 @@
+@import "./src/themes/styles.scss";
+
 .card {
     height: 300px;
     width: 300px;
     border-radius: 15px;
-    background-color: #fffff4;
-    color: #8E3B46; 
+    background-color: $ww-light-gray;
+    color: $ww-dark-blue;
 }
 
 img {
