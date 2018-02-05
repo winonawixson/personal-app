@@ -1,8 +1,10 @@
+@import "./src/themes/styles.scss";
+
 .header {
-    color: #19647E;
+    color: $ww-blue;
     font-size: 250%;
     padding-top: 12px;
-    font-weight: bold;  
+    font-weight: bold;
 }
 nav a {
     padding: 5px 10px;
@@ -12,12 +14,12 @@ nav a {
     font-size: 100%;
   }
   nav a:visited, a:link {
-    color: #19647E;
+    color: $ww-blue;
   }
   nav a:hover {
-    color: #8E3B46;
-    background-color: #fffff4;
+    color: $ww-purple;
+    background-color: $ww-gray;
   }
   nav a.active {
-    color: #8E3B46;
+    color: $ww-purple;
   }
