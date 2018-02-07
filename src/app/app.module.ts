@@ -18,9 +18,7 @@ import { PhotographyComponent } from './photography/photography.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MatCardModule,
-    MatGridListModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
