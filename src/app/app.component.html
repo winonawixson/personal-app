@@ -1,22 +1,32 @@
 <div class="container-fluid">
-  <div class="app-header row">
+  <div class="row">
     <div class="col-md-2">
-      <img class="img-fluid" src="./assets/images/winona.jpg" />
     </div>
     <div class="col-md-8">
-      <div class="row">
-          <div class="header col-md-8">
-              Winona J. Wixson
+
+      <div class="app-header row">
+        <div class="col-md-2 thumbnail">
+          <img class="img-fluid" src="./assets/images/winona.jpg" />
+        </div>
+        <div class="col-md-10">
+
+          <div class="row">
+            <div class="col-md-12" id="header">
+              <h1>Winona J. Wixson</h1>
             </div>
-            <br />
-            <nav class="col-md-8">
-              <a routerLink="/home">home</a>
-              <a routerLink="/about">about</a>
-              <a routerLink="/photography">photography</a>
-              <!-- <a routerLink="/math">math</a> -->
-            </nav>
+            </div>
+            <div class="row">
+              <nav class="col-md-12">
+                <a routerLink="/home">home</a>
+                <a routerLink="/about">about</a>
+                <a routerLink="/photography">photography</a>
+                <!-- <a routerLink="/math">math</a> -->
+              </nav>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
   <router-outlet></router-outlet>
 </div>

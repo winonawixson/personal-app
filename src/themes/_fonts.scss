@@ -1,40 +1,53 @@
-// $calibre-font-path: $font-path !default;
+@import "~bootstrap/scss/bootstrap-grid.scss";
 
-// @font-face {
-//     font-family: "Calibre Semibold";
-//     src:local("Calibre Semibold"), local("Calibre-Semibold"), url("#{$roboto-font-path}/CalibreWeb-Semibold.woff") format("woff");
-// }
+$font-size-tiny:6pt;
+$font-size-xxxxsmall:10pt;
+$font-size-xxxsmall:11pt;
+$font-size-xxsmall:12pt;
+$font-size-xsmall:13pt;
+$font-size-small:14pt;
+$font-size-regular:16pt;
+$font-size-large:18pt;
+$font-size-xlarge:20pt;
+$font-size-xxlarge:22pt;
+$font-size-xxxlarge:24pt;
 
-// @font-face {
-//     font-family: "Calibre Bold";
-//     src:local("Calibre Bold"), local("Calibre-Bold"), url("#{$roboto-font-path}/CalibreWeb-Bold.woff") format("woff");
-// }
+html {
+  font-size: $font-size-xsmall;
+}
 
-// @font-face {
-//     font-family: "Calibre Medium";
-//     src:local("Calibre Medium"), local("Calibre-Medium"), url("#{$roboto-font-path}/CalibreWeb-Medium.woff") format("woff");
-// }
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: $font-size-xxxsmall;
+  }
+  // $font-size-header: $font-size-xxsmall;
+  // $font-size-mini: $font-size-tiny;
+  // $font-size-normal: $font-size-xxxsmall;
+}
 
-//  @font-face {
-//     font-family: "Calibre Regular";
-//     src:local("Calibre Regular"), local("Calibre-Regular"), url("#{$roboto-font-path}/CalibreWeb-Regular.woff") format("woff");
-// }
+@include media-breakpoint-up(md) {
+  html {
+    font-size: $font-size-xxsmall;
+  }
+  // $font-size-header: $font-size-small;
+  // $font-size-mini: $font-size-xxxsmall;
+  // $font-size-normal: $font-size-xxsmall;
+}
 
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: $font-size-regular;
+  }
+  // $font-size-header: $font-size-xxlarge;
+  // $font-size-mini: $font-size-xsmall;
+  // $font-size-normal: $font-size-large;
+}
 
-$font-size-xxxxsmall:12pt;
-$font-size-xxxsmall:14pt;
-$font-size-xxsmall:16pt;
-$font-size-xsmall:18pt;
-$font-size-small:20pt;
-$font-size-regular:22pt;
-$font-size-large:24pt;
-$font-size-xlarge:26pt;
-$font-size-xxlarge:28pt;
-$font-size-huge:40pt;
-
-$font-size-header-1:$font-size-huge;
-$font-size-header-2:$font-size-xxlarge;
-$font-size-header-3:$font-size-xlarge;
-$font-size-header-4:$font-size-large;
-$font-size-header-5:$font-size-regular;
-$font-size-header-6:$font-size-small;
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: $font-size-large;
+  }
+  // $font-size-header: $font-size-xxxlarge;
+  // $font-size-mini: $font-size-small;
+  // $font-size-normal: $font-size-xlarge;
+}

@@ -1,10 +1,10 @@
 @import "./src/themes/styles.scss";
 
-.header {
+#header {
     color: $ww-blue;
-    font-size: $font-size-header-1;
     padding-top: 12px;
     font-weight: bold;
+    width: 100%;
 }
 nav a {
     padding: 5px 10px;
@@ -32,5 +32,5 @@ nav a {
     padding: 25px;
     border: 2px solid $ww-purple;
     // text-align: center;
-    margin: 35px 200px;
+    margin: 35px 0px;
   }
