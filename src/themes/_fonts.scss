@@ -1,0 +1,40 @@
+// $calibre-font-path: $font-path !default;
+
+// @font-face {
+//     font-family: "Calibre Semibold";
+//     src:local("Calibre Semibold"), local("Calibre-Semibold"), url("#{$roboto-font-path}/CalibreWeb-Semibold.woff") format("woff");
+// }
+
+// @font-face {
+//     font-family: "Calibre Bold";
+//     src:local("Calibre Bold"), local("Calibre-Bold"), url("#{$roboto-font-path}/CalibreWeb-Bold.woff") format("woff");
+// }
+
+// @font-face {
+//     font-family: "Calibre Medium";
+//     src:local("Calibre Medium"), local("Calibre-Medium"), url("#{$roboto-font-path}/CalibreWeb-Medium.woff") format("woff");
+// }
+
+//  @font-face {
+//     font-family: "Calibre Regular";
+//     src:local("Calibre Regular"), local("Calibre-Regular"), url("#{$roboto-font-path}/CalibreWeb-Regular.woff") format("woff");
+// }
+
+
+$font-size-xxxxsmall:12pt;
+$font-size-xxxsmall:14pt;
+$font-size-xxsmall:16pt;
+$font-size-xsmall:18pt;
+$font-size-small:20pt;
+$font-size-regular:22pt;
+$font-size-large:24pt;
+$font-size-xlarge:26pt;
+$font-size-xxlarge:28pt;
+$font-size-huge:40pt;
+
+$font-size-header-1:$font-size-huge;
+$font-size-header-2:$font-size-xxlarge;
+$font-size-header-3:$font-size-xlarge;
+$font-size-header-4:$font-size-large;
+$font-size-header-5:$font-size-regular;
+$font-size-header-6:$font-size-small;

@@ -2,7 +2,7 @@
 
 .header {
     color: $ww-blue;
-    font-size: 250%;
+    font-size: $font-size-header-1;
     padding-top: 12px;
     font-weight: bold;
 }
@@ -11,7 +11,7 @@ nav a {
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
-    font-size: 100%;
+    font-size: $font-size-xxxsmall;
   }
   nav a:visited, a:link {
     color: $ww-blue;
