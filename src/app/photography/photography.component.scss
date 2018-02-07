@@ -1,27 +1,32 @@
 @import "./src/themes/styles.scss";
 
 
-mat-card {
-  margin: 35px;
-  height: 400px;
-  width: auto;
-  border-radius: 25px;
-  background-color: $ww-light-gray;
-  color: $ww-dark-blue;
-}
+// mat-card {
+//   margin: 35px;
+//   height: 400px;
+//   width: auto;
+//   border-radius: 25px;
+//   background-color: $ww-light-gray;
+//   color: $ww-dark-blue;
+// }
 
-img {
-  height: 200px;
-  width: auto;
-  margin: auto;
-}
+// img {
+//   height: 200px;
+//   width: auto;
+//   margin: auto;
+// }
 
-.title {
-  font-size: 130%;
-  font-weight: bold;
-  text-align: left;
-}
+// .title {
+//   font-size: 130%;
+//   font-weight: bold;
+//   text-align: left;
+// }
 
-.contentText {
-  padding-top: 5px;
+// .contentText {
+//   padding-top: 5px;
+// }
+
+.photo-page {
+  text-align: center;
+  padding-top: 20px;
 }
