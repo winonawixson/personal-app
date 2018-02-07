@@ -13,41 +13,29 @@ $font-size-xxlarge:22pt;
 $font-size-xxxlarge:24pt;
 
 html {
-  font-size: $font-size-xsmall;
+  font-size: $font-size-regular;
 }
 
 @include media-breakpoint-up(sm) {
   html {
     font-size: $font-size-xxxsmall;
   }
-  // $font-size-header: $font-size-xxsmall;
-  // $font-size-mini: $font-size-tiny;
-  // $font-size-normal: $font-size-xxxsmall;
 }
 
 @include media-breakpoint-up(md) {
   html {
     font-size: $font-size-xxsmall;
   }
-  // $font-size-header: $font-size-small;
-  // $font-size-mini: $font-size-xxxsmall;
-  // $font-size-normal: $font-size-xxsmall;
 }
 
 @include media-breakpoint-up(lg) {
   html {
     font-size: $font-size-regular;
   }
-  // $font-size-header: $font-size-xxlarge;
-  // $font-size-mini: $font-size-xsmall;
-  // $font-size-normal: $font-size-large;
 }
 
 @include media-breakpoint-up(xl) {
   html {
     font-size: $font-size-large;
   }
-  // $font-size-header: $font-size-xxxlarge;
-  // $font-size-mini: $font-size-small;
-  // $font-size-normal: $font-size-xlarge;
 }

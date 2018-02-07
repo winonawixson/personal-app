@@ -23,7 +23,8 @@ nav a {
   nav a.active {
     color: $ww-purple;
   }
-  nav {
+
+  #social-media {
     margin-bottom: 20px;
   }
 
@@ -33,4 +34,10 @@ nav a {
     border: 2px solid $ww-purple;
     // text-align: center;
     margin: 35px 0px;
+  }
+
+  .icon{
+    height: 29px;
+    width: 29px;
+    margin: 15px;
   }
