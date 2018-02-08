@@ -8,6 +8,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PhotographyComponent } from './photography/photography.component';
+import { AboutMeService } from './about-me/about-me.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { PhotographyComponent } from './photography/photography.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AboutMeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
