@@ -1,3 +1,5 @@
+@import "./src/themes/styles.scss";
+
 label,input {
   font-size: 80%;
 }
@@ -8,4 +10,9 @@ label, textarea {
 
 .row-spacing {
   padding-top: 20px;
+}
+
+.error-label {
+  font-size: 50%;
+  color: $ww-purple;
 }

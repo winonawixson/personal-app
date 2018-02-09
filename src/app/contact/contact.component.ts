@@ -34,8 +34,7 @@ export class ContactComponent implements OnInit {
       )],
       message: ['', Validators.compose([
         Validators.required,
-        Validators.maxLength(1000),
-        Validators.pattern(/^[a-zA-Z &\/.\(\)-,']+$/)]
+        Validators.maxLength(1000)]
       )]
     });
   }

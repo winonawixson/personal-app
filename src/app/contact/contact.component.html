@@ -7,11 +7,13 @@
         <label class="center-block">Name*
           <input class="form-control input-lg" formControlName="name" type="text" />
         </label>
+        <label class="error-label"  *ngIf="!contactForm.controls.name.valid && contactForm.controls.name.touched">Invalid field.</label>
       </div>
       <div class="col-md-6">
         <label class="center-block">Email*
           <input class="form-control input-lg" formControlName="email" type="email">
         </label>
+        <label class="error-label"  *ngIf="!contactForm.controls.email.valid && contactForm.controls.email.touched">Invalid field.</label>
       </div>
     </div>
     <div class="row">
@@ -19,6 +21,7 @@
         <label class="center-block">Message*
           <textarea class="form-control" formControlName="message"> </textarea>
         </label>
+        <label class="error-label" *ngIf="!contactForm.controls.message.valid && contactForm.controls.message.touched">Invalid field.</label>
       </div>
     </div>
     <div class="row">
