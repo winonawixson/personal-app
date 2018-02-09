@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { AboutMeService } from './about-me/about-me.service';
+import { PhotographyService } from './photography/photography.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,10 @@ import { AboutMeService } from './about-me/about-me.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [AboutMeService],
+  providers: [
+    AboutMeService,
+    PhotographyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,35 +1,56 @@
 import { Component, OnInit } from '@angular/core';
-import { PhotographyModel } from './photography.model';
+import { PhotographyService } from './photography.service';
+import { PhotoRow } from './photo-row.model';
 
 @Component({
-  selector: 'app-photography',
-  templateUrl: './photography.component.html',
-  styleUrls: ['./photography.component.scss']
+    selector: 'app-photography',
+    templateUrl: './photography.component.html',
+    styleUrls: ['./photography.component.scss']
 })
 export class PhotographyComponent implements OnInit {
 
-  photos: Array<PhotographyModel>;
+    photoSources: Array<PhotoRow>;
 
-  constructor() { }
+    constructor(public photoService: PhotographyService) { }
 
-  ngOnInit() {
-    this.photos = [
-      {
-        title: 'Puppy',
-        contentText: `Here's a small puppy I found a picture of. :)`,
-        imageSource: './assets/images/puppy.jpg'
-      },
-      {
-        title: 'Sunrise',
-        contentText: ` Here's a sunrise I found a picture of. And now more text...`,
-        imageSource: './assets/images/sunrise.jpg'
-      },
-      {
-        title: 'Koala',
-        contentText: `Here's a small koala I found a picture of. :)`,
-        imageSource: './assets/images/koala.jpg'
-      }
-    ];
-  }
+    ngOnInit() {
+      this.getPhotoSources();
+    }
+
+    getPhotoSources(): void {
+        this.photoService.getPhotoSources().subscribe(results => {
+           this.photoSources = this.convertSourcesToTemplateModel(results);
+        });
+
+    }
+
+    convertSourcesToTemplateModel(photoSources: Array<string>): Array<PhotoRow> {
+      const photoSourcesModel = new Array<PhotoRow>();
+
+      const leftPhotoSources = new Array<string>();
+      const rightPhotoSources = new Array<string>();
+
+      photoSources.forEach((source, index) => {
+        if ((index + 2) % 2 === 0) {
+          leftPhotoSources.push(source);
+        } else {
+          rightPhotoSources.push(source);
+        }
+      });
+
+      leftPhotoSources.forEach(source => {
+        photoSourcesModel.push(<PhotoRow> {
+          leftPhotoSource: source,
+          rightPhotoSource: ''
+        });
+      });
+
+      rightPhotoSources.forEach((source, index) => {
+        photoSourcesModel[index].rightPhotoSource = source;
+      });
+
+      return photoSourcesModel;
+    }
+
 
 }
