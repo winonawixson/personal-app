@@ -1,0 +1,16 @@
+.button {
+  // font-family: "Calibre Semibold";
+  // font-size:$font-size-xxsmall;
+  font-kerning: 100;
+  text-transform: uppercase;
+}
+
+.button-light {
+  background-color: $ww-blue;
+  color:$white;
+}
+
+.button-dark {
+  background-color: $ww-dark-blue;
+  color: $white;
+}

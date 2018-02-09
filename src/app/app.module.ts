@@ -10,17 +10,21 @@ import { HomeComponent } from './home/home.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { AboutMeService } from './about-me/about-me.service';
 import { PhotographyService } from './photography/photography.service';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     HomeComponent,
-    PhotographyComponent
+    PhotographyComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     AboutMeService,

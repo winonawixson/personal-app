@@ -1,0 +1,32 @@
+<div class="row form-group">
+  <div class="col-md-2"></div>
+  <div class="col-md-8" [formGroup]="contactForm">
+
+    <div class="row">
+      <div class="col-md-6">
+        <label class="center-block">Name:
+          <input class="form-control input-lg" formControlName="name" type="text" />
+        </label>
+      </div>
+      <div class="col-md-6">
+        <label class="center-block">Email:
+          <input class="form-control input-lg" formControlName="email" type="email">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <label class="center-block">Message:
+              <textarea class="form-control" formControlName="message"> </textarea>
+            </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <button type="button" class="btn button-light"  [disabled]="!contactForm.valid" (click)="saveContactMessage($event)">Send</button>
+      </div>
+    </div>
+
+
+  </div>
+</div>
