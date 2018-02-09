@@ -12,6 +12,7 @@ import { AboutMeService } from './about-me/about-me.service';
 import { PhotographyService } from './photography/photography.service';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './contact/contact.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   providers: [
     AboutMeService,
-    PhotographyService
+    PhotographyService,
+    ContactService
   ],
   bootstrap: [AppComponent]
 })

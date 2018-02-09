@@ -4,29 +4,30 @@
 
     <div class="row">
       <div class="col-md-6">
-        <label class="center-block">Name:
+        <label class="center-block">Name*
           <input class="form-control input-lg" formControlName="name" type="text" />
         </label>
       </div>
       <div class="col-md-6">
-        <label class="center-block">Email:
+        <label class="center-block">Email*
           <input class="form-control input-lg" formControlName="email" type="email">
         </label>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-          <label class="center-block">Message:
-              <textarea class="form-control" formControlName="message"> </textarea>
-            </label>
+      <div class="col-md-12 row-spacing">
+        <label class="center-block">Message*
+          <textarea class="form-control" formControlName="message"> </textarea>
+        </label>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-          <button type="button" class="btn button-light"  [disabled]="!contactForm.valid" (click)="saveContactMessage($event)">Send</button>
+      <div class="col-md-12 row-spacing text-right">
+        <button type="button" class="btn button-light" [disabled]="!contactForm.valid" (click)="saveContactDetails($event)">Send</button>
       </div>
     </div>
 
+    <label *ngIf="successfulSave">Saved successfully!</label>
 
   </div>
 </div>

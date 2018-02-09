@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { ContactDetails } from './contact-details.model';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,8 +11,10 @@ import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
+  successfulSave = false;
 
-  constructor(private fb: FormBuilder
+  constructor(private fb: FormBuilder,
+    private contactService: ContactService
   ) { }
 
   ngOnInit() {
@@ -36,12 +40,20 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  saveContactMessage(event: any) {
-    console.log('saving... ', event);
-    console.log(this.contactForm.controls.name.value);
-    console.log(this.contactForm.controls.email.value);
-    console.log(this.contactForm.controls.message.value);
+  saveContactDetails(event: any) {
+    const contactDetails = <ContactDetails>{
+      name: this.contactForm.controls.name.value,
+      email: this.contactForm.controls.email.value,
+      message: this.contactForm.controls.message.value
+    };
 
+    this.contactService.saveContactDetails(contactDetails)
+    .subscribe(result => {
+      if (result) {
+        this.successfulSave = true;
+        this.initializeForm();
+      }
+    });
   }
 
 }
