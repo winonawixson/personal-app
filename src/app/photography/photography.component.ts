@@ -19,38 +19,8 @@ export class PhotographyComponent implements OnInit {
 
     getPhotoSources(): void {
         this.photoService.getPhotoSources().subscribe(results => {
-           this.photoSources = this.convertSourcesToTemplateModel(results);
+           this.photoSources = results;
         });
 
     }
-
-    convertSourcesToTemplateModel(photoSources: Array<string>): Array<PhotoRow> {
-      const photoSourcesModel = new Array<PhotoRow>();
-
-      const leftPhotoSources = new Array<string>();
-      const rightPhotoSources = new Array<string>();
-
-      photoSources.forEach((source, index) => {
-        if ((index + 2) % 2 === 0) {
-          leftPhotoSources.push(source);
-        } else {
-          rightPhotoSources.push(source);
-        }
-      });
-
-      leftPhotoSources.forEach(source => {
-        photoSourcesModel.push(<PhotoRow> {
-          leftPhotoSource: source,
-          rightPhotoSource: ''
-        });
-      });
-
-      rightPhotoSources.forEach((source, index) => {
-        photoSourcesModel[index].rightPhotoSource = source;
-      });
-
-      return photoSourcesModel;
-    }
-
-
 }
